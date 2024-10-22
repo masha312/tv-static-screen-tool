@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>static screen tool</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="ui.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    <main>
+      <form class="toolbar">
+        <div class="toolbar__set">
+          <label class="visually-hidden" for="color1">Color 1:</label>
+          <input type="color" id="color1" name="color1" value="#C8C4DF" />
+
+          <label class="visually-hidden" for="color2">Color 2:</label>
+          <input type="color" id="color2" name="color2" value="#E6DFB6" />
+
+          <label class="visually-hidden" for="color3">Color 3:</label>
+          <input type="color" id="color3" name="color3" value="#BCD7D7" />
+        </div>
+
+        <div class="toolbar__set">
+          <label class="visually-hidden" for="grid-size" class="visually-hidden"
+            >Number of Squares:</label
+          >
+          <input
+            type="range"
+            id="grid-size"
+            name="grid-size"
+            min="20"
+            max="300"
+            value="80"
+          />
+          <span class="toolbar__grid-value" id="grid-size-value">80</span>
+        </div>
+
+        <button id="saveVideo" type="button" onClick="startRecording()">
+          Export video
+        </button>
+      </form>
+
+      <div id="artboard">
+        <div id="sketch-wrapper"></div>
+      </div>
+    </main>
+
+    <script src="https://www.unpkg.com/p5@1.9.4/lib/p5.min.js"></script>
+    <script src="CCapture.all.min.js"></script>
+    <script src="record.js"></script>
+    <script src="state.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+body {
+  padding: 2rem;
+  margin: 0px;
+}
+
+#artboard {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/* TOOLBAR */
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.toolbar__set {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.toolbar__grid-value {
+  min-width: 2rem;
+}
