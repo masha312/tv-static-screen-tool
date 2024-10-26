@@ -3,6 +3,13 @@ body {
   margin: 0px;
 }
 
+button {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  align-items: center;
+}
+
 #artboard {
   overflow: hidden;
 }
@@ -36,4 +43,28 @@ body {
 
 .toolbar__grid-value {
   min-width: 2rem;
+}
+
+.red-dot {
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  display: block;
+  border-radius: 100%;
+}
+
+.pulsing {
+  animation: pulse 1s infinite linear;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0%;
+  }
 }
